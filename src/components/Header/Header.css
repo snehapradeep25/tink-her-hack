@@ -1,41 +1,52 @@
-.header{
-    height:34vw;
-    margin:30px auto;
-    background: url('./header.png') no-repeat;
-    background-size: contain;
+/* Assuming your navbar has a fixed position */
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* Any other navbar styling */
+  }
+  
+  .header {
+    height: 75vh;  /* Make the header take up the full viewport height */
+    margin-top: 1040px;  /* Adjust this based on the height of your navbar */
+    background-image: url('./header.png');
+    background-size: cover;  /* Ensure the image covers the entire header */
+    background-position: center center;  /* Center the image */
     position: relative;
-}
-.header-contents{
-    position:absolute;
+  }
+  
+  .header-contents {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 1.5vw;
-    max-width:50%;
+    max-width: 50%;
     bottom: 10%;
-    left:6vw;
-    animation : fadeIn 3s;
-}
-
-.header-contents h2{
-    font-weight:500;
-    color:rgb(221, 121, 121);
-    font-size: max(4.5vw,22px);
-}
-
-.header-contents p{
+    left: 6vw;
+    animation: fadeIn 3s;
+  }
+  
+  .header-contents h2 {
+    font-weight: 500;
+    color: rgb(221, 121, 121);
+    font-size: max(4.5vw, 22px);
+  }
+  
+  .header-contents p {
     color: rgb(97, 32, 43);
     font-size: 2vw;
-}
-
-.header-contents button{
+  }
+  
+  .header-contents button {
     border: none;
     color: #747474;
     font-weight: 500;
     padding: 1vw 2.3vw;
-    background-color: #b2b2ce
-    ;
-    font-size: max(1vw,13px);
+    background-color: #b2b2ce;
+    font-size: max(1vw, 13px);
     border-radius: 50px;
-
-}
+  }
+  

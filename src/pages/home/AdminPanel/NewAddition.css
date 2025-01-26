@@ -2,7 +2,11 @@
     font-family: 'Roboto', sans-serif;
     background-color: #fdfcfb;
     color: #2c3e50;
-    padding: 40px;
+    padding:10px 20px 40px 20px;
+    margin-top: 550px;
+    width: 100%;
+    height: 100%;
+    
   }
   
   .newest-additions h2 {
@@ -17,7 +21,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
   }
   
   .addition-card {
@@ -26,8 +32,9 @@
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow:visible;
-    width: 300px;
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
   }
   
   .addition-card:hover {

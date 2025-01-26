@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../../../firebase";
 import { onSnapshot,collection } from "firebase/firestore";
+import './NewAddition.css';
+
 
 const NewestAdditions = () => {
   const [messages, setMessages] = useState([]);

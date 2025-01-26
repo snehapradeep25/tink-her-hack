@@ -24,7 +24,7 @@ const Admin = () => {
     try {
       await addDoc(ref, data);
       console.log("Message saved successfully");
-      navigate("/newest-additions");
+      navigate("/NewestAdditions");
     } catch (e) {
       console.log("Error saving message: ", e);
     }

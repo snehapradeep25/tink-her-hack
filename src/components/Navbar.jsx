@@ -1,25 +1,47 @@
-import React from 'react'
-import './Navbar.css'
-import { assets } from '../assets/assests'
-import { useState } from 'react'
-import Admin from '../pages/home/AdminPanel/Admin'
+import React, { useState } from 'react';
+import './Navbar.css';
+import { assets } from '../assets/assests';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
-
   return (
-    <nav className='navbar'  >
-      <img src={assets.logo} alt="" className="logo" />
+    <nav className="navbar">
+      <img src={assets.logo} alt="Logo" className="logo" />
       <ul className="navbar-section">
-        <li onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>home</li>
-        <li onClick={() => setMenu("menu")} className={menu === "menu" ? "active" : ""}>search</li>
-        <li onClick={() => setMenu("Admin")} className={menu === "Admin" ? "active" : ""}>Admin</li>
-        <li onClick={() => setMenu("contact-us")} className={menu === "contact-us" ? "active" : ""}>contact us</li>
+        
+        {/* Use Link for Home navigation */}
+        <li 
+          className={menu === "home" ? "active" : ""}
+        >
+          <Link to="/" onClick={() => setMenu("home")}>Home</Link> {/* Link to home page */}
+        </li>
+        
+        <li 
+          onClick={() => setMenu("menu")} 
+          className={menu === "menu" ? "active" : ""}
+        >
+          Search
+        </li>
+        
+        {/* Use Link for Admin navigation */}
+        <li 
+          className={menu === "Admin" ? "active" : ""}
+        >
+          <Link to="/Admin" onClick={() => setMenu("Admin")}>Admin</Link>  {/* Using Link to navigate to /Admin */}
+        </li>
+        
+        <li 
+          onClick={() => setMenu("contact-us")} 
+          className={menu === "contact-us" ? "active" : ""}
+        >
+          Contact Us
+        </li>
       </ul>
       <button>Sign Up</button>
-
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
