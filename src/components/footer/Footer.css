@@ -1,0 +1,110 @@
+.footer {
+    background-color: #1a1a1a; /* Footer background color */
+    color: #ebebeb; /* Text color */
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Arial', sans-serif;
+    width: 100vw; /* Ensure the footer spans the full viewport width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limit the content width for better layout on larger screens */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 50px; /* Display size for the logo */
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.footer-logo p {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ba9797;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Wrap links to the next line on smaller screens */
+    justify-content: center;
+}
+
+.footer-links li {
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+    color: #ba9797;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icon-container {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.footer-icon-container:hover {
+    transform: scale(1.1);
+}
+
+.footer-icon-container img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.footer-bottom hr {
+    width: 90%;
+    height: 1px;
+    background: #c7c7c7;
+    border: none;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #c7c7c7;
+}

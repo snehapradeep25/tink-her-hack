@@ -1,0 +1,62 @@
+.newest-additions {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdfcfb;
+    color: #2c3e50;
+    padding: 40px;
+  }
+  
+  .newest-additions h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 30px;
+  }
+  
+  .additions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .addition-card {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow:visible;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .addition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .addition-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .addition-card h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 15px;
+    text-align: center;
+  }
+  
+  .addition-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 10px 15px 15px;
+    text-align: center;
+  }
+  
+  .addition-card p:last-child {
+    margin-bottom: 20px;
+  }
+  

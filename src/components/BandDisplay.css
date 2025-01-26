@@ -1,0 +1,31 @@
+.band-list {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .band-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .band-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .band-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .band-item h3 {
+    margin-top: 10px;
+  }
+  
+  .band-item p {
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,131 @@
+.explore {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  
+  .explore h1 {
+    color: #262626;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .explore-text {
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  .explore-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .explore-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .explore-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .explore-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, border 0.3s ease;
+  }
+  
+  .explore-list-item p {
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  
+  .explore-list-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  .explore-list-item img.active {
+    border: 3px solid #4CAF50;
+    transform: scale(1.1);
+  }
+  
+  .explore hr {
+    margin: 20px 0;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+  }
+  
+  .explore-square-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  
+  .explore-square-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .explore-square-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .explore-square-item.active {
+    border-color: #4CAF50;
+  }
+  
+  .explore-square-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 8px;
+  }
+  
+  .explore-square-item p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .explore-square-item p:hover {
+    color: #4CAF50;
+  }
+  
